@@ -1,0 +1,450 @@
+/*config header start*/
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.header {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(89, 0, 190);
+  width: 100%;
+  position: fixed;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#icono {
+  width: 100%;
+  height: 100%;
+}
+
+
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*config header end*/
+
+/**/
+
+/*config main start*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/img/Fondos\ de\ pantalla\ lineal\ iconos\,\ 4k\,\ arte\,\ fondo\ oscuro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+
+/*config main end*/
+
+/**/
+
+/*config footer start*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(89, 0, 190);
+  width: 100%;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+  font-size: 15px;
+  padding: 20px;
+}
+
+/*config footer end*/
+
+/**/
+
+/*config tienda start*/
+
+.pagination {
+  background-color: rgb(89, 0, 190);
+  margin-bottom: 20px;
+}
+
+.pagination a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.pagination .active {
+  font-weight: bold;
+  color: #ee0404;
+}
+
+.game-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-top: 100px;
+}
+
+.game-gallery {
+  background-image: url(/assets/img/fondo\ neon.gif);
+  background-size: contain;
+  
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap:30px;
+  margin: 30px;
+}
+
+.game-card {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.game-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tag {
+  top: 10px;
+  left: 10px;
+  background-color: #800000;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+}
+
+.game-nav-box {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: rgb(89, 0, 190);
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.game-nav {
+  width: 80%;
+}
+
+/*config tienda end*/
+
+/**/
+
+/*config index start*/
+
+.index-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.section1 img {
+  width: 1200px;
+  height: 600px;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.section3 img {
+  width: 300px;
+  height: 400px;
+}
+
+.title-index {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  width: 80%;
+  background-color: rgb(89, 0, 190);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.game-card-carrusel {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.game-card-carrusel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tag {
+  top: 10px;
+  left: 10px;
+  background-color: #800000;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+}
+
+.publicidad-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  width: 60%;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgb(89, 0, 190);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.publicidad-container img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+.publicidad-texto {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+.publicidad-texto h2 {
+  font-size: 24px;
+  color: #daf106;
+  margin-bottom: 10px;
+}
+
+.publicidad-texto p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*config index end*/
+
+/**/
+
+/*config carrito start*/
+
+.main-carrito {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 150px;
+}
+
+.banner-carrito {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 600px;
+  background-image: url(/assets/img/tienda\ game\ pc.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: rgb(89, 0, 190);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carrito img {
+  width: 400px;
+  height: 200px;
+  margin: 30px auto;
+}
+
+#carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 60%;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+  font-size: 15px;
+  padding: 20px;
+}
+
+/*config carrito end*/
+
+/**/
+
+/*config contacto start*/
+
+.contacto-box {
+  margin: 150px auto;
+  padding: 30px;
+  width: 40%;
+  background-color: rgb(89, 0, 190);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contacto-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: stretch;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.form-control {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.btn {
+  background-color: #800000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #350000;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/*config contacto end*/
+
+/**/
+
+/*config login start*/
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 150px auto;
+  padding: 30px;
+  width: 40%;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-img {
+  margin: 150px auto;
+}
