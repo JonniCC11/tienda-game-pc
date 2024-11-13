@@ -15,6 +15,13 @@
   background-color: rgb(89, 0, 190);
   width: 100%;
   position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-family: 'Cabin', sans-serif;
+  color: turquoise;
 }
 
 .left-section {
@@ -57,8 +64,13 @@ nav ul li {
 
 a {
   text-decoration: none;
-  color: white;
+  color: turquoise;
 }
+
+a:hover, .btn:hover {
+  transition: color 0.3s ease;
+}
+
 
 /*config header end*/
 
@@ -66,16 +78,23 @@ a {
 
 /*config main start*/
 
+body {
+  padding: 0 auto;
+  margin: 0 auto;
+  height: 100%;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url(/assets/img/Fondos\ de\ pantalla\ lineal\ iconos\,\ 4k\,\ arte\,\ fondo\ oscuro.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
   color: white;
   font-family: 'Cabin', sans-serif;
+  height: 100%;
+  padding: 0 auto;
 }
 
 /*config main end*/
@@ -91,10 +110,20 @@ footer {
   justify-content: center;
   background-color: rgb(89, 0, 190);
   width: 100%;
-  color: white;
+  color: turquoise;
   font-family: 'Cabin', sans-serif;
   font-size: 15px;
   padding: 20px;
+  margin-bottom: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 10px;
 }
 
 /*config footer end*/
@@ -124,33 +153,33 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   margin-top: 100px;
 }
 
 .game-gallery {
   background-image: url(/assets/img/fondo\ neon.gif);
   background-size: contain;
-  
   display:flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+  width: 80%;
   gap:30px;
   margin: 30px;
+  border-radius: 10px;
 }
 
 .game-card {
   background-color: #333;
   border-radius: 10px;
   overflow: hidden;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 30px auto;
 }
 
 .game-card img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
 }
 
@@ -169,9 +198,10 @@ footer {
   justify-content: center;
   align-items: center; 
   background-color: rgb(89, 0, 190);
-  width: 100%;
+  width: 80%;
   height: 50px;
   margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 .game-nav {
@@ -426,6 +456,20 @@ textarea.form-control {
   text-align: center;
 }
 
+.redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.redes img {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+}
+
 /*config contacto end*/
 
 /**/
@@ -447,4 +491,77 @@ textarea.form-control {
 
 .login-img {
   margin: 150px auto;
+}
+
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-section nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section1 img,
+  .section3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .publicidad-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .carrusel {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .right-section nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .publicidad-container img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .publicidad-texto h2 {
+    font-size: 20px;
+  }
+
+  .carrusel {
+    width: 100%;
+  }
+
+  .game-card-carrusel {
+    width: 80px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links p {
+    margin: 5px 0;
+  }
 }
