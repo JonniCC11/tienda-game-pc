@@ -82,6 +82,7 @@ body {
   padding: 0 auto;
   margin: 0 auto;
   height: 100%;
+  width: 100%;
 }
 
 main {
@@ -231,8 +232,8 @@ footer {
 }
 
 .section1 img {
-  width: 1200px;
-  height: 600px;
+  width: 800px;
+  height: 400px;
 }
 
 .section3 {
@@ -257,39 +258,45 @@ footer {
   font-size: 40px;
 }
 
-.carrusel {
+.galeria{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px auto;
-  width: 80%;
-  background-color: rgb(89, 0, 190);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+  margin: 50px auto;
+  height: 400px;
+  width: 800px;
 }
 
-.game-card-carrusel {
-  background-color: #333;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 20px;
-}
-
-.game-card-carrusel img {
+.slider {
+  background-image: url(/assets/img/1.jpg);
+  background-size: contain;
+  height: 120%;
   width: 100%;
-  height: auto;
-  display: block;
+  border-radius: 20px;
+  animation: animate 25s infinite;
 }
 
-.tag {
-  top: 10px;
-  left: 10px;
-  background-color: #800000;
-  padding: 5px;
-  border-radius: 5px;
-  color: white;
-  font-size: 12px;
+@keyframes animate {
+  20% {
+    background-image: url(/assets/img/1.jpg);
+    background-size: cover;
+  }
+  40% {
+    background-image: url(/assets/img/2.jpg);
+    background-size: cover;
+  }
+  60% {
+    background-image: url(/assets/img/3.jpg);
+    background-size: cover;
+  }
+  80% {
+    background-image: url(/assets/img/4.jpg);
+    background-size: cover;
+  }
+  100% {
+    background-image: url(/assets/img/5.jpg);
+    background-size: cover;
+  }
 }
 
 .publicidad-container {
@@ -325,6 +332,39 @@ footer {
 .publicidad-texto p {
   font-size: 16px;
   line-height: 1.5;
+}
+
+.title-api {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.api {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  background-color: rgb(89, 0, 190);
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.api-container {
+  display: flex;
+}
+
+.api-container img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+article {
+  padding: 10px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
 }
 
 /*config index end*/
@@ -477,22 +517,47 @@ textarea.form-control {
 /*config login start*/
 
 .login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 150px auto;
-  padding: 30px;
-  width: 40%;
+width: 100%;
+height: 100%;
+margin-top: 20%;
+margin-bottom: 20%;
+}
+.form-container {
+  background-color: #292929;
   color: white;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.login-img {
-  margin: 150px auto;
+.form-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-container button {
+  background-color: #4a148c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-container button:hover {
+  background-color: #6a1b9a;
+}
 
 
 @media (max-width: 768px) {
@@ -517,10 +582,13 @@ textarea.form-control {
     width: 90%;
   }
 
-  .carrusel {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+  .galeria {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  height: 200px;
+  width: 400px;
   }
 }
 
